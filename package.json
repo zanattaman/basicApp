@@ -1,6 +1,10 @@
 {
   "name": "library",
   "version": "1.0.0",
+  "engines": {
+    "node": "4.4.0",
+    "npm": "2.14.20",
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
