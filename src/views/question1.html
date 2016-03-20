@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div>
+  <div>
+  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+         <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+      </ul>
+</nav>
+</div>
+
+<div class="container">
+  
+  <form role="form" action="/result">
+    <h2>Your goal</h2>
+    <p>What is the objective of your trip?</p>
+    <div class="radio">
+      <label><input type="radio" name="goal">Eating turism</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="goal">Turistical sites</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="goal">Countryside exploration</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="goal">Sports</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="goal">Turistical sites</label>
+    </div>
+
+    <h2>How long</h2>
+    <p>Set the time you can spend </p>
+    <div class="radio">
+      <label><input type="radio" name="time">1-2 days</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="time">3-5 days</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="time">5 days to 10 days</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="time"> 2 weeks</label>
+    </div>
+
+    <h2>How to go</h2>
+    <p>What transport you prefer? </p>
+    <div class="radio">
+      <label><input type="radio" name="transport">Car</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="transport">Train</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="transport">Plain</label>
+    </div>
+
+
+        <button type="submit" class="btn btn-lg btn-primary">Search for me!</button>
+
+  </form>
+</div>
+
+  </div>
+</body>
+</html>
