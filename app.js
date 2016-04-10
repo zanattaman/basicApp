@@ -2,26 +2,45 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 var path = __dirname + '/src/views/';
+app.use(express.static('public'));
+
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
+
+
+var _ = require("underscore");
 
 router.use(function (req,res,next) {
   console.log("/" + req.method);
   next();
 });
+app.set('view engine', 'ejs');
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-router.get("/about",function(req,res){
-  res.sendFile(path + "about.html");
+router.get("/galery",function(req,res){
+	var fs = require('fs');
+	var contents = fs.readFileSync("public/files/externalSource.json");
+	var obj = JSON.parse(contents);
+	var gender = req.query.gender
+		console.log(gender)
+
+	var filtered = _.where(obj.elements, {gender: true});
+    res.render(path + "galery", {
+        elements: filtered
+    });
+	});
+router.get("/checkList",function(req,res){
+  res.sendFile(path + "checkList.html");
 });
 
-router.get("/question1",function(req,res){
-  res.sendFile(path + "question1.html");
-});
-
-router.get("/result",function(req,res){
-  res.sendFile(path + "result.html");
+router.get("/final",function(req,res){
+  res.sendFile(path + "final.html");
 });
 
 app.use("/",router);
