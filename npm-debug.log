@@ -1,0 +1,138 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.7
+3 info using node@v0.10.25
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies loading dependencies from /home/xavier/Applications/others/basicApp/package.json
+6 warn package.json library@1.0.0 No repository field.
+7 verbose install where, deps [ '/home/xavier/Applications/others/basicApp',
+7 verbose install   [ 'body-parser',
+7 verbose install     'ejs',
+7 verbose install     'express',
+7 verbose install     'express-handlebars',
+7 verbose install     'jade',
+7 verbose install     'lodash',
+7 verbose install     'lodash.where',
+7 verbose install     'underscore',
+7 verbose install     'grunt',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-nodeunit',
+7 verbose install     'grunt-contrib-uglify',
+7 verbose install     'jshint-stylish',
+7 verbose install     'wiredep' ] ]
+8 verbose install where, peers [ '/home/xavier/Applications/others/basicApp', [] ]
+9 verbose installManyTop reading for lifecycle /home/xavier/Applications/others/basicApp/package.json
+10 info preinstall library@1.0.0
+11 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/body-parser/package.json
+12 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/ejs/package.json
+13 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/express-handlebars/package.json
+15 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/grunt/package.json
+16 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-jshint/package.json
+17 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-nodeunit/package.json
+18 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-uglify/package.json
+19 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-nodemon/package.json
+20 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/jade/package.json
+21 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/jshint-stylish/package.json
+22 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/lodash/package.json
+23 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/lodash.where/package.json
+24 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/underscore/package.json
+25 verbose installManyTop reading scoped package data from /home/xavier/Applications/others/basicApp/node_modules/wiredep/package.json
+26 info package.json grunt-contrib-jshint@0.10.0 No license field.
+27 info package.json grunt-contrib-nodeunit@0.4.1 No license field.
+28 info package.json grunt-contrib-uglify@0.5.1 No license field.
+29 info package.json wiredep@2.2.2 No license field.
+30 verbose readDependencies loading dependencies from /home/xavier/Applications/others/basicApp/package.json
+31 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/body-parser/package.json
+32 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/ejs/package.json
+33 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/express/package.json
+34 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/express-handlebars/package.json
+35 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/grunt/package.json
+36 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-jshint/package.json
+37 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-nodeunit/package.json
+38 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-contrib-uglify/package.json
+39 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/grunt-nodemon/package.json
+40 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/jade/package.json
+41 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/jshint-stylish/package.json
+42 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/lodash/package.json
+43 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/lodash.where/package.json
+44 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/underscore/package.json
+45 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/wiredep/package.json
+46 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/.bin/grunt/package.json
+47 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/.bin/jade/package.json
+48 verbose targetResolver reading package data from /home/xavier/Applications/others/basicApp/node_modules/.bin/wiredep/package.json
+49 verbose already installed skipping grunt-contrib-nodeunit@~0.4.1 /home/xavier/Applications/others/basicApp
+50 verbose already installed skipping grunt-contrib-uglify@~0.5.0 /home/xavier/Applications/others/basicApp
+51 verbose already installed skipping jshint-stylish@^2.0.1 /home/xavier/Applications/others/basicApp
+52 verbose already installed skipping body-parser@^1.15.0 /home/xavier/Applications/others/basicApp
+53 verbose already installed skipping wiredep@^2.2.2 /home/xavier/Applications/others/basicApp
+54 verbose already installed skipping ejs@^2.3.4 /home/xavier/Applications/others/basicApp
+55 verbose already installed skipping jade@^1.11.0 /home/xavier/Applications/others/basicApp
+56 verbose already installed skipping express@^4.13.4 /home/xavier/Applications/others/basicApp
+57 verbose already installed skipping lodash@^4.9.0 /home/xavier/Applications/others/basicApp
+58 verbose already installed skipping express-handlebars@^2.0.1 /home/xavier/Applications/others/basicApp
+59 verbose already installed skipping lodash.where@^3.1.0 /home/xavier/Applications/others/basicApp
+60 verbose already installed skipping underscore@^1.8.3 /home/xavier/Applications/others/basicApp
+61 verbose already installed skipping grunt@^1.0.1 /home/xavier/Applications/others/basicApp
+62 verbose already installed skipping grunt-contrib-jshint@~0.10.0 /home/xavier/Applications/others/basicApp
+63 silly install resolved []
+64 info build /home/xavier/Applications/others/basicApp
+65 info linkStuff library@1.0.0
+66 silly linkStuff library@1.0.0 has /home/xavier/Applications/others as its parent node_modules
+67 verbose linkBins library@1.0.0
+68 verbose linkMans library@1.0.0
+69 verbose rebuildBundles library@1.0.0
+70 verbose rebuildBundles [ '.bin',
+70 verbose rebuildBundles   'body-parser',
+70 verbose rebuildBundles   'ejs',
+70 verbose rebuildBundles   'express',
+70 verbose rebuildBundles   'express-handlebars',
+70 verbose rebuildBundles   'grunt',
+70 verbose rebuildBundles   'grunt-contrib-jshint',
+70 verbose rebuildBundles   'grunt-contrib-nodeunit',
+70 verbose rebuildBundles   'grunt-contrib-uglify',
+70 verbose rebuildBundles   'grunt-nodemon',
+70 verbose rebuildBundles   'jade',
+70 verbose rebuildBundles   'jshint-stylish',
+70 verbose rebuildBundles   'lodash',
+70 verbose rebuildBundles   'lodash.where',
+70 verbose rebuildBundles   'underscore',
+70 verbose rebuildBundles   'wiredep' ]
+71 verbose rebuild bundle /home/xavier/Applications/others/basicApp/node_modules/grunt-nodemon
+72 info build /home/xavier/Applications/others/basicApp/node_modules/grunt-nodemon
+73 info preinstall grunt-nodemon@0.4.1
+74 info linkStuff grunt-nodemon@0.4.1
+75 silly linkStuff grunt-nodemon@0.4.1 has /home/xavier/Applications/others/basicApp/node_modules as its parent node_modules
+76 verbose linkBins grunt-nodemon@0.4.1
+77 verbose linkMans grunt-nodemon@0.4.1
+78 verbose rebuildBundles grunt-nodemon@0.4.1
+79 verbose rebuildBundles [ '.bin', 'nodemon' ]
+80 info install grunt-nodemon@0.4.1
+81 info postinstall grunt-nodemon@0.4.1
+82 info install library@1.0.0
+83 info postinstall library@1.0.0
+84 info prepublish library@1.0.0
+85 verbose validateInstall loading /home/xavier/Applications/others/basicApp/package.json for validation
+86 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+86 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+86 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+86 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+86 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+86 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+87 verbose cwd /home/xavier/Applications/others/basicApp
+88 error Linux 3.13.0-32-generic
+89 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+90 error node v0.10.25
+91 error npm  v2.14.7
+92 error code EPEERINVALID
+93 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+93 error peerinvalid Peer grunt-contrib-jshint@0.10.0 wants grunt@~0.4.0
+93 error peerinvalid Peer grunt-contrib-nodeunit@0.4.1 wants grunt@~0.4.0
+93 error peerinvalid Peer grunt-contrib-uglify@0.5.1 wants grunt@~0.4.0
+93 error peerinvalid Peer grunt-nodemon@0.4.1 wants grunt@~0.4.1
+94 verbose exit [ 1, true ]

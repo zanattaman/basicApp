@@ -4,6 +4,15 @@ var router = express.Router();
 var path = __dirname + '/src/views/';
 app.use(express.static('public'));
 
+var fs = require('fs'), 
+    gruntfile;
+
+// start grunt
+gruntfile = __dirname + '/Gruntfile.js';
+require(__dirname + '/node_modules/grunt/lib/grunt.js').cli({
+  'gruntfile' : gruntfile
+});
+
 var bodyParser = require('body-parser')
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -25,7 +34,7 @@ router.get("/",function(req,res){
 
 //filter out the gender
 router.get("/galery",function(req,res, next){
-  var fs = require('fs');
+
   var contents = fs.readFileSync("public/files/testFile.json");
   var obj = JSON.parse(contents);
   var genderSelected = req.query.gender
