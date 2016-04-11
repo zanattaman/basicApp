@@ -23,16 +23,23 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-router.get("/galery",function(req,res){
-	var fs = require('fs');
-	var contents = fs.readFileSync("public/files/externalSource.json");
-	var obj = JSON.parse(contents);
-	var gender = req.query.gender
-		console.log(gender)
+//filter out the gender
+router.get("/galery",function(req,res, next){
+  var fs = require('fs');
+  var contents = fs.readFileSync("public/files/testFile.json");
+  var obj = JSON.parse(contents);
+  var genderSelected = req.query.gender
 
-	var filtered = _.where(obj.elements, {gender: true});
+  var filtered = _.filter(obj.elements, function(element){
+      return _.has(element, "gender") && element["gender"] === genderSelected;
+  });
+  req.filtered = filtered;
+  next();
+});
+
+router.get("/galery",function(req,res){
     res.render(path + "galery", {
-        elements: filtered
+        elements: req.filtered
     });
 	});
 router.get("/checkList",function(req,res){
