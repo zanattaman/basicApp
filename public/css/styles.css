@@ -4,6 +4,9 @@
 .navbar-form input, .form-inline input {
   width:auto;
 }
+.element--hidden {
+  display: none;
+}
 
 body {
   padding-top:50px;
